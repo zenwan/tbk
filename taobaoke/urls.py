@@ -15,8 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from zenxuan.views import getitem
+from zenxuan.views import getitem,item_convert
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^getitem/', getitem,name='getitem'),
+    url(r'^itemconvert/', item_convert,name='itemconvert'),
 ]
